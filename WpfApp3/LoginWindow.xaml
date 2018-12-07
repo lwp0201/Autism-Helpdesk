@@ -1,0 +1,31 @@
+﻿<Window x:Class="LoginPage.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginPage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="525">
+    <StackPanel Background="Gray">
+        <TextBlock x:Name="autismHeadline" Text="AUTISM HELPDESK" TextAlignment="Center" Foreground="#FFFFFF79" Padding="20" FontSize="20" Background="#FFF40B4B"/>
+        <Grid Margin="0 50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <TextBlock x:Name="username" Text="User Name :" FontWeight="Bold" TextAlignment="Center" FontSize="16" />
+                <TextBlock x:Name="pass" Text="Password :" FontWeight="Bold" TextAlignment="Center" FontSize="16" Margin="0 30"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <TextBox x:Name="usernameBox" Padding="4" BorderBrush="Black" BorderThickness="2" Background="Gray" Width="300" HorizontalAlignment="Left"/>
+                <TextBox x:Name="passBox" Padding="4" BorderBrush="Black" BorderThickness="2" Background="Gray" Margin="0 25" Width="300" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </Grid>
+        
+        <Button x:Name="loginButton" Click="loginButton_Click" Content="Login" Width="80" Padding="5" Background="#FFFFFF79" FontSize="16" Margin="345,0,0,0" Foreground="#FFF40B4B" FontWeight="Bold"/>
+        
+    </StackPanel>
+</Window>

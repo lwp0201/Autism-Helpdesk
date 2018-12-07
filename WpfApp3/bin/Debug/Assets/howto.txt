@@ -1,0 +1,15 @@
+Home Page
+The home page includes two main buttons for the user to signup or login and also contains info and symptoms button which every user can access to get information about any hospital,school and ngo and different types of autism.
+
+Sign Up
+In this window you have to provide your desired user name,full name password and all the necessary information which are required to open an account. It is also necessary to provide the child's name and age for whom this account will be maintained.
+
+Info
+Here you can search for your desired hospital,school or ngo according to district,division,area which will be helpful for you to know about the facilities regarding autism nearby.
+
+Schedule
+Here you can set up a scheduler for your future activities according to your desired time and date and can also add description about the scheduler which you want to set.
+
+Symptom
+In this window you can check whether your child has any of the three types of autism by looking through the symptoms and analyzing them according to the symptoms shown by the child.
+

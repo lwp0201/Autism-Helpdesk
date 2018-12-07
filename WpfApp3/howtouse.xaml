@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp3.howtouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="howtouse" Height="674" Width="1200" Background="#484848">
+    <Grid>
+        <Label Content="Autism Helpdesk"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="1172" Background="#FFFFFF79" Foreground="#FFF40B4B" FontFamily="Elephant" FontSize="22" HorizontalContentAlignment="Center" />
+        <RichTextBox x:Name="howtotext" IsEnabled="False" HorizontalAlignment="Left" Height="476" Margin="10,63,0,0" VerticalAlignment="Top" Width="1172" Background="#FFF7F5BB">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="write here.." />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Image HorizontalAlignment="Left" Height="64" Margin="500,557,0,0" VerticalAlignment="Top" Width="60" Source="image/handsm.png"/>
+        <Label Content="Autism Helpdesk" HorizontalAlignment="Left" Margin="565,570,0,0" VerticalAlignment="Top" Width="182" Foreground="#FFFDF9F9" FontSize="18"/>
+
+
+    </Grid>
+</Window>

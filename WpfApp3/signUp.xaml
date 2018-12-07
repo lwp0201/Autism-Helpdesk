@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="600" Background="#7e7e7e">
+    <Grid Background="#484848" Width="360" HorizontalAlignment="Right">
+        <Label Content="Sign Up" HorizontalAlignment="Left" Margin="141,10,0,0" VerticalAlignment="Top" Width="58" FontFamily="elephant" Foreground="#FFFFFF79"/>
+        <TextBox x:Name="uname" HorizontalAlignment="Left" Height="19" Margin="141,42,0,0" Text="User Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11" GotFocus="tb_GotFocus" />
+        <TextBox x:Name="fname" HorizontalAlignment="Left" Height="19" Margin="142,73,0,0" Text="Full Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="19" Margin="141,104,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus" />
+        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="19" Margin="141,135,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus"/>
+        <TextBox x:Name="pass2" HorizontalAlignment="Left" Height="19" Margin="141,169,0,0" Text="Re-type password" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11" GotFocus="tb_GotFocus"/>
+        <TextBox x:Name="cname" HorizontalAlignment="Left" Height="19" Margin="142,204,0,0" Text="Child Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Height="19" Margin="142,236,0,0" Text="Child Age" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus"/>
+        <TextBox x:Name="location" HorizontalAlignment="Left" Height="19" Margin="142,270,0,0" Text="Location" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="1" Foreground="#FFFFFF79" FontSize="11"  GotFocus="tb_GotFocus"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="106,45,0,0" VerticalAlignment="Top" Width="15" Source="image/pink-female-hi.png"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="106,104,0,0" VerticalAlignment="Top" Width="15" Source="image/pink-telephone-hi.png"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,135,0,0" VerticalAlignment="Top" Width="25" Source="image/password_11600.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,164,0,0" VerticalAlignment="Top" Width="25" Source="image/password_11600.png" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,199,0,0" VerticalAlignment="Top" Width="25" Source="image/families-children-icon-colour.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,236,0,0" VerticalAlignment="Top" Width="25" Source="image/child_age3.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,270,0,0" VerticalAlignment="Top" Width="25" Source="image/6864734_orig.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="96,307,0,0" VerticalAlignment="Top" Width="25" Source="image/man.png" Stretch="Fill"/>
+        <Button x:Name="signBtn" Content="Sign Up" HorizontalAlignment="Left" Margin="164,353,0,0" VerticalAlignment="Top" Width="81" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant" Height="29" Click="signBtn_Click" />
+        <Button x:Name="loginBtn" Content="Login" HorizontalAlignment="Left" Margin="-168,325,0,0" VerticalAlignment="Top" Width="81" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant" Height="29" Click="loginBtn_Click" />
+        <Label Content="Already Have An Account ?" HorizontalAlignment="Left" Margin="-194,295,0,0" VerticalAlignment="Top" Width="147" FontFamily="Calibri" Foreground="#FFFFFF79"/>
+        <Image HorizontalAlignment="Left" Height="145" Margin="-177,95,0,0" VerticalAlignment="Top" Width="124" Source="image/hand.png"/>
+        <Label Content="Autism Helpdesk" HorizontalAlignment="Left" Margin="-194,28,0,0" VerticalAlignment="Top" Width="141" FontFamily="elephant" Foreground="#FFFFFF79" Height="33" FontSize="14" BorderBrush="#FFF40B4B" BorderThickness="3"/>
+        <RadioButton x:Name="malebtn" Content="male" HorizontalAlignment="Left" Margin="141,308,0,0" VerticalAlignment="Top" Width="58" Foreground="#FFFFFF79"/>
+        <RadioButton x:Name="febtn" Content="female" HorizontalAlignment="Left" Margin="204,308,0,0" VerticalAlignment="Top" Width="58" Foreground="#FFFFFF79"/>
+        <RadioButton x:Name="otherbtn" Content="others" HorizontalAlignment="Left" Margin="276,308,0,0" VerticalAlignment="Top" Width="58" Foreground="#FFFFFF79"/>
+        <Image HorizontalAlignment="Left" Height="24" Margin="106,73,0,0" VerticalAlignment="Top" Width="15" Source="image/pink-female-hi.png"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp3.symptom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="symptom" Height="500" Width="900" Background="#7e7e7e">
+    <Grid>
+        <TextBlock Margin="5,5,0,0" Text="Autism Helpdesk" VerticalAlignment="Top" Width="880" Background="#FFF40B4B" Foreground="#FFF7F1F1" TextAlignment="Center" Padding="0 5 0 0" FontFamily="Elephant" Height="26" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <StackPanel HorizontalAlignment="Left" Height="425" Margin="5,38,0,0" VerticalAlignment="Top" Width="200" Background="#484848">
+            <Image Height="30" Source="image/arrowy.png" />
+            <Image Height="30" Margin="0 105 0 105" Source="image/arrowx2.png"/>
+            <Image Height="30" Source="image/arrowx3.png"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="425" Margin="210,38,0,0" VerticalAlignment="Top" Width="675" Background="#484848">
+            <RichTextBox Height="40" Background="#7e7e7e" BorderBrush="{x:Null}" Foreground="#FFFBF5F5">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="1.Question"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <RichTextBox Height="40" Background="#7e7e7e" BorderBrush="{x:Null}" Foreground="#FFFDF9F9">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="1.Question"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <RichTextBox Height="40" Background="#7e7e7e" BorderBrush="{x:Null}" Foreground="#FFF5EFEF">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="1.Question"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <CheckBox Content="CheckBox" Foreground="#FFB9B986" Margin="10 5 0 10"/>
+            <Button Content="Next" Width="100" Height="30" HorizontalAlignment="Right" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

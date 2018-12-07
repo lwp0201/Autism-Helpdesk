@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp3.info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="info" Height="674" Width="1200" Background="#484848">
+    <Grid>
+        <TextBlock Margin="0 0 0 0" Text="Autism Helpdesk" VerticalAlignment="Top" Width="1190" Background="#FFF40B4B" Foreground="#FFF7F1F1" TextAlignment="Center" Padding="0 10 0 0" FontFamily="Elephant" Height="55" TextWrapping="Wrap"  HorizontalAlignment="Left" FontSize="24">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <StackPanel HorizontalAlignment="Left" Height="563" Margin="10,70,0,0" VerticalAlignment="Top" Width="328">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1D1719" Offset="0.799"/>
+                    <GradientStop Color="#FF837C7C"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <DockPanel Height="50" Background="#FFF40B4B">
+                <Image Source="image/schoolsm.png"  Width="54" />
+                <Button x:Name="schoolbtn" Click="schoolbtn_Click"  Content="School" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant" FontSize="20" />
+            </DockPanel>
+            <DockPanel Height="50" Background="#FFF40B4B" Margin="0 10 0 0">
+                <Image Source="image/ngosm.png"  Width="54" />
+                <Button x:Name="ngobtn" Click="ngobtn_Click" Content="NGO" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant" FontSize="20" />
+            </DockPanel>
+            <DockPanel Height="50" Background="#FFF40B4B" Margin="0 10 0 0">
+                <Image Source="image/hospitalsm.png"  Width="54" />
+                <Button x:Name="hospitalbtn" Click="hospitalbtn_Click"  Content="Hospital" Background="#FFF40B4B" BorderBrush="{x:Null}" Foreground="#FFFBF5F5" FontFamily="Elephant" FontSize="20" />
+            </DockPanel>
+            <Image Height="300" Source="image/logo-trans.png" Margin="0 80 0 0"/>
+        </StackPanel>
+        <Grid Height="563" Margin="343,70,0,0" VerticalAlignment="Top" Width="847" Opacity="0.9">
+            <Grid.Background>
+                <ImageBrush ImageSource="image/flowermap.jpg"/>
+            </Grid.Background>
+            <ComboBox x:Name="divbox" DropDownClosed="divbox_DropDownClosed" FontSize="22" HorizontalAlignment="Left" Margin="255,110,0,0" VerticalAlignment="Top" Width="249" Height="42" SelectedIndex="0">
+                <ComboBoxItem Content="Borishal"/>
+                <ComboBoxItem Content="Chittagong"/>
+                <ComboBoxItem Content="Dhaka"/>
+                <ComboBoxItem Content="Mymensingh"/>
+                <ComboBoxItem Content="Rajshahi"/>
+                <ComboBoxItem Content="Rangpur"/>
+                <ComboBoxItem Content="Sylhet"/>
+            </ComboBox>
+            <Label Content="Division :" HorizontalAlignment="Left" Margin="103,111,0,0" VerticalAlignment="Top" FontFamily="Elephant" FontSize="24" Foreground="#FF151312" Background="#FFEEF900" />
+            <ComboBox x:Name="disbox" DropDownClosed="disbox_DropDownClosed" FontSize="22" HorizontalAlignment="Left" Margin="255,221,0,0" VerticalAlignment="Top" Width="249" Height="42"/>
+            <Label Content="District  :" HorizontalAlignment="Left" Margin="103,222,0,0" VerticalAlignment="Top" FontFamily="Elephant" FontSize="24" Foreground="#FF151312" Background="#FFEEF900" />
+            <ComboBox x:Name="areabox" FontSize="22" DropDownClosed="areabox_DropDownClosed" HorizontalAlignment="Left" Margin="257,321,0,0" VerticalAlignment="Top" Width="249" Height="42"/>
+            <Label Content="Area :       " HorizontalAlignment="Left" Margin="105,322,0,0" VerticalAlignment="Top" FontFamily="Elephant" FontSize="24" Foreground="#FF151312" Background="#FFEEF900" />
+            <TextBox x:Name="searchbox" GotFocus="searhbox_GotFocus" LostFocus="searhbox_LostFocus" HorizontalAlignment="Left" Height="32" Margin="637,10,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="191" FontSize="18" />
+            <Image HorizontalAlignment="Left" Height="32" Margin="598,10,0,0" VerticalAlignment="Top" Width="39" Source="image/search-icon.png"/>
+            <Button x:Name="searchbtn" Click="searchbtn_Click" Content="Search" HorizontalAlignment="Left" Margin="619,423,0,0" VerticalAlignment="Top" Width="131" Height="43" Background="#FFFFFF79" Foreground="#FF111010" FontFamily="Elephant" FontSize="20" BorderBrush="{x:Null}"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

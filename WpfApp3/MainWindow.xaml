@@ -1,0 +1,165 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Autism Heldesk || Home" Height="674" Width="1200" >
+    <Grid >
+        <DockPanel>
+
+            <StackPanel Background="#484848"  Width="150" Margin="-100 0 0 0">
+                <StackPanel.Style>
+                    <Style  TargetType="StackPanel">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-100 0 0 0" To="0 0 0 0" DecelerationRatio=".8" Duration="0:0:0.7"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0 0 0 0" To="-100 0 0 0" DecelerationRatio=".5" Duration="0:0:0.7"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Style>
+                <DockPanel x:Name="info_dock" MouseLeftButtonDown="info_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10">
+                    <Label Width="100" Foreground="White" VerticalAlignment="Center" Content="INFO" Margin="5 0 0 0" />
+                    <Image Source="image/img3.png" Width="25" Height="25" Margin="5"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="symptom_dock" MouseLeftButtonDown="symptom_dock_MouseLeftButtonDown" Width="150" Margin='0 0 0 10'>
+                    <Label Width="100" Foreground="White" VerticalAlignment="Center"  Content="SYMPTOM" Margin="5 0 0 0" />
+                    <Image Source="image/img2.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="about_dock" MouseLeftButtonDown="about_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10" >
+                    <Label Width="100" Foreground="White" VerticalAlignment="Center" Content="ABOUT" Margin="5 0 0 0" />
+                    <Image Source="image/email3.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="howtouse_dock" MouseLeftButtonDown="howtouse_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10">
+                    <Label Width="100" Content="HOW TO USE" Foreground="White" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                    <Image Source="image/img4.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="scheduler_dock" MouseLeftButtonDown="scheduler_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10">
+                    <Label Width="100" Content="SCHEDULER" Foreground="White" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                    <Image Source="image/calendar.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="video_dock" MouseLeftButtonDown="video_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10">
+                    <Label Width="100" Content="VIDEO GUIDE" Foreground="White" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                    <Image Source="image/tv-play.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+                <DockPanel x:Name="game_dock" MouseLeftButtonDown="game_dock_MouseLeftButtonDown" Width="150" Margin="0 0 0 10">
+                    <Label Width="100" Content="GAMES" Foreground="White" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                    <Image Source="image/icon-game-controller-b-512.png" Width="25" Height="25"/>
+                    <DockPanel.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <Trigger Property="DockPanel.IsMouseOver" Value="true">
+                                    <Setter Property="DockPanel.Background" Value="#F30B4B">
+
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DockPanel.Style>
+                </DockPanel >
+
+            </StackPanel>
+
+
+            <StackPanel Background="#7e7e7e" Margin="5 0 0 0">
+                <DockPanel Height="40">
+                    <TextBlock x:Name="usernamebox" Width="100" Text="No User!" FontSize="15" Padding="10" Foreground="AliceBlue" />
+                    <Button x:Name="signbtn" Click="signbtn_Click" Width="100" Height="30" VerticalAlignment="Bottom" Margin="830,0,10,0" Content="Sign Up" Foreground="#FFFFFF79" FontFamily="Elephant" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="3" />
+                    <Button x:Name="logbtn" Click="logbtn_Click" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Login" Foreground="#FFFFFF79" FontFamily="Elephant" Background="#FF484848" BorderBrush="#FFF40B4B" BorderThickness="3"/>
+                </DockPanel>
+                <Image Source="image/slider-children-paint.jpg" Stretch="Fill" Height="550"/>
+                <DockPanel>
+                    <Image Source="image/handsm.png" Height="35" Margin="550 5 0 0" />
+                    <Label Content="Autism Helpdesk" FontFamily="Elephant" Foreground="#FFFFFF" Margin="0 15 0 0 " Width="118"  />
+                    <Button x:Name="logoutBtn" Click="logoutBtn_Click" Content="Logout" Width="90" Margin="350 10 0 0"  Background="#FFF40B4B" Foreground="#FFF4F479" FontSize="14" FontFamily="Elephant" BorderBrush="{x:Null}"/>
+                </DockPanel>
+
+            </StackPanel>
+            <!--<Image Height="319" VerticalAlignment="Top" Width="100"/>-->
+
+        </DockPanel>
+
+    </Grid>
+</Window>

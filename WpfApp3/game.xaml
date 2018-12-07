@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp3.game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="game" Height="674" Width="1200"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" Loaded="Window_Loaded" >
+    <Grid >
+
+        <Label x:Name="label1" Content="Autism Helpdesk" HorizontalContentAlignment="Center"  Background="#FFF40B4B" HorizontalAlignment="Center" Margin="10,10,5,0" VerticalAlignment="Top" Width="1177" FontFamily="Elephant" FontSize="20" Foreground="#FFFDF6F6" BorderBrush="#FFD9E847" BorderThickness="2" />
+        <StackPanel HorizontalAlignment="Left" Height="582" Margin="10,51,0,0" VerticalAlignment="Top" Width="212">
+            <Image gif:ImageBehavior.AnimatedSource="image/g4.gif" Stretch="Fill" Height="250" Margin="0 200 0 0"/>
+        </StackPanel>
+        <Canvas  HorizontalAlignment="Left" Height="582" Margin="227,51,0,0" VerticalAlignment="Top" Width="955">
+            <Canvas.Background>
+                <ImageBrush ImageSource="image/game6.png" Opacity=".5"/>
+            </Canvas.Background>
+            <StackPanel Width="437">
+                <Image x:Name="gif1" gif:ImageBehavior.AnimatedSource="image/aa.gif" HorizontalAlignment="Left" Height="171" Margin="127,30,0,0" VerticalAlignment="Top" Width="165" Stretch="Fill"/>
+                <Button x:Name="notnotbtn" Click="notnotbtn_Click" Content="NOT    NOT" Foreground="#FFF40B4B" FontFamily="Elephant" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#4CF40B4B" Height="40" Margin="110,0,114,0"/>
+            </StackPanel>
+            <StackPanel  Canvas.Left="508"  Width="437">
+                <Image gif:ImageBehavior.AnimatedSource="image/aa.gif" HorizontalAlignment="Left" Height="171" Margin="127,30,0,0" VerticalAlignment="Top" Width="165" Stretch="Fill"/>
+                <Label Content="Color  Master"  Foreground="#FFF40B4B" FontFamily="Elephant" FontSize="19" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#4CF40B4B" Height="40" Margin="110,0,114,0"/>
+            </StackPanel>
+            <StackPanel   Canvas.Top="296" Canvas.Left="250" Width="437">
+                <Image gif:ImageBehavior.AnimatedSource="image/aa.gif" HorizontalAlignment="Left" Height="171" Margin="127,30,0,0" VerticalAlignment="Top" Width="165" Stretch="Fill"/>
+                <Label Content="Puzzle Power"  Foreground="#FFF40B4B" FontFamily="Elephant" FontSize="19" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#4CF40B4B" Height="40" Margin="110,0,114,0"/>
+            </StackPanel>
+
+        </Canvas>
+
+
+
+    </Grid>
+</Window>
